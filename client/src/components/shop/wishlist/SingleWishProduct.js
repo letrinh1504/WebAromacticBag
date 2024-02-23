@@ -37,8 +37,12 @@ const Product = () => {
   };
   if (loading) {
     return (
-      <div className="my-32 text-2xl text-center">
+      <div className=" text-2xl text-center">
+        <div className="flex flex-col items-center justify-center">
+        <img className="w-25" src="./image/NoFoundProductInWishlist.png" alt="Girl in a jacket"></img>
+        </div>
         No product found in wishList
+
       </div>
     );
   }

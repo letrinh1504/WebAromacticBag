@@ -28,7 +28,7 @@ const CategoryList = () => {
   };
 
   return (
-    <div className={`${data.categoryListDropdown ? "" : "hidden"} my-4`}>
+    <div className={`${data.categoryListDropdown ? "" : "hidden"}`}>
       <hr />
       <div className="py-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {categories && categories.length > 0 ? (
@@ -42,7 +42,7 @@ const CategoryList = () => {
                   className="col-span-1 m-2 flex flex-col items-center justify-center space-y-2 cursor-pointer border shadow-lg rounded  "
                 >
                   <img
-                  className="fix-image-categories object-center cursor-pointer  rounded-top"
+                    className="fix-image-categories object-center cursor-pointer  rounded-top"
                     src={`${apiURL}/uploads/categories/${item.cImage}`}
                     alt="pic"
                   />
@@ -52,7 +52,11 @@ const CategoryList = () => {
             );
           })
         ) : (
-          <div className="text-xl text-center my-4">No Category</div>
+          <div className="col-span-2 md:col-span-3 lg:col-span-4 flex items-center justify-center text-2xl">
+            <div className="flex flex-col items-center justify-center">
+              <img className="w-75" src="../../image/NoFoundProductInWishlist.png" alt="Girl in a jacket"></img>
+              No category found
+            </div></div>
         )}
       </div>
     </div>
@@ -184,14 +188,13 @@ const Search = () => {
 
   return (
     <div
-      className={`${
-        data.searchDropdown ? "" : "hidden"
-      } my-4 flex items-center justify-between`}
+      className={`${data.searchDropdown ? "" : "hidden"
+        }  flex items-center justify-between`}
     >
       <input
         value={search}
         onChange={(e) => searchHandle(e)}
-        className="px-4 text-xl py-4 focus:outline-none"
+        className="px-2 text-xl py-2 focus:outline-none"
         type="text"
         placeholder="Search products..."
       />
