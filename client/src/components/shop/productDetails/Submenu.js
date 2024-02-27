@@ -9,12 +9,12 @@ const Submenu = (props) => {
       {/* Submenu Section */}
       <section className="mx-4 mt-24 md:mx-12 md:mt-32 lg:mt-24">
         <div className="flex justify-between items-center">
-          <div className="text-sm flex space-x-2">
+          <div className="text-sm flex space-x-2 mt-4">
             <span
               className="hover:text-yellow-700 cursor-pointer"
-              onClick={(e) => history.push("/")}
+              onClick={(e) => history.push("/productInCatogory")}
             >
-              Shop
+              Shop 
             </span>
             <span
               className="hover:text-yellow-700 cursor-pointer"

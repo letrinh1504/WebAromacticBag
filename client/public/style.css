@@ -24,6 +24,7 @@ body {
   margin: 0;
 }
 
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -6428,6 +6429,9 @@ video {
 .m-24 {
   margin: 6rem;
 }
+.m-26 {
+  margin: 8rem 3rem 2rem ;
+}
 
 .m-32 {
   margin: 8rem;
@@ -7091,6 +7095,9 @@ video {
 .mt-20 {
   margin-top: 5rem;
 }
+.mt-fix-contactUs {
+  margin-top: 3.5rem;
+}
 
 .mr-20 {
   margin-right: 5rem;
@@ -7106,6 +7113,9 @@ video {
 
 .mt-24 {
   margin-top: 6rem;
+}
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mr-24 {
@@ -7617,19 +7627,24 @@ video {
      object-fit: contain;
 }
 .fix-image-product{
-  width: 600px;
-  height: 360px;
+  width: 100%;
+  height: auto;
   object-fit: fill;
 }
 .fix-image-categories{
-  width: 390px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: fill;
 }
 .fix-image-detail{
   width: 100%;
   height: auto;
-  object-fit: fill;
+  object-fit: contain;
+}
+.item-custom-image{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -87468,4 +87483,34 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+}
+
+.login-bg {
+  background-image:
+  url('./image/bg.png');
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  color: white;
+  padding: 20px;
+}
+.navber-bg{
+  /* background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 1), rgba(117, 19, 93, 0.2)),
+  url('./image/bgForProduct.jpg');
+  width: 100%;
+
+  object-fit: contain;
+  color: white;
+  padding: 20px; */
+}
+.catogory-bg{
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 1)),
+  url('./image/bgForProduct2.jpg');
+  width: 100%;
+  /* height: 150px; */
+  object-fit: contain;
+  color: white;
+  /* padding: 20px; */
 }

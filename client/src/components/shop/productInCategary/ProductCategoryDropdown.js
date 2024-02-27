@@ -46,7 +46,7 @@ const CategoryList = () => {
                     src={`${apiURL}/uploads/categories/${item.cImage}`}
                     alt="pic"
                   />
-                  <div className="font-medium">{item.cName}</div>
+                  <div className="font-medium pt-2 pb-4 m-4">{item.cName}</div>
                 </div>
               </Fragment>
             );
@@ -122,7 +122,7 @@ const FilterList = () => {
               type="range"
               id="points"
               min="0"
-              max="150000"
+              max="200000"
               step="10"
               onChange={(e) => rangeHandle(e)}
             />
@@ -189,7 +189,7 @@ const Search = () => {
   return (
     <div
       className={`${data.searchDropdown ? "" : "hidden"
-        }  flex items-center justify-between`}
+        }  flex items-center justify-between  border-2 mt-3`}
     >
       <input
         value={search}

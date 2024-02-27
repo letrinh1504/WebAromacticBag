@@ -11,6 +11,8 @@ import PageNotFound from "./layout/PageNotFound";
 import ProductDetails from "./productDetails";
 import ProductByCategory from "./productInCategary/ProductByCategory";
 import CheckoutPage from "./order/CheckoutPage";
+import ContactUs from "./contactUs";
+import custom from "./custom";
 
 export {
   Home,
@@ -28,4 +30,6 @@ export {
   ProductDetails,
   ProductByCategory,
   CheckoutPage,
+  ContactUs,
+  custom
 };

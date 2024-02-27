@@ -185,7 +185,6 @@ const CartModal = () => {
                       cartModalOpen();
                       dispatch({
                         type: "loginSignupError",
-                        payload: !data.loginSignupError,
                       });
                       dispatch({
                         type: "loginSignupModalToggle",

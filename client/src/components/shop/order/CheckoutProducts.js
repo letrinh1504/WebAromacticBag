@@ -54,7 +54,7 @@ export const CheckoutComponent = (props) => {
   }
   return (
     <Fragment>
-      <section className="mx-4 mt-20 md:mx-12 md:mt-32 lg:mt-24">
+      <section className="m-26  border rounded shadow-lg">
         <div className="text-2xl mx-2">Order</div>
         {/* Product List */}
         <div className="flex flex-col md:flex md:space-x-2 md:flex-row">
@@ -187,7 +187,7 @@ const CheckoutProducts = ({ products }) => {
                     alt="wishListproduct"
                   />
                   <div className="text-lg md:ml-6 truncate">
-                    {product.pName}
+                    {product.pName.slice(0, 30) + "..."}
                   </div>
                   <div className="md:ml-6 font-semibold text-gray-600 text-sm">
                     Price :  {product.pPrice}₫{" "}

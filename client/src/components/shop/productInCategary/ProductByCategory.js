@@ -12,12 +12,12 @@ const Submenu = ({ category }) => {
       {/* Submenu Section */}
       <section className="mx-4 mt-24 md:mx-12 md:mt-32 lg:mt-24">
         <div className="flex justify-between items-center">
-          <div className="text-sm flex space-x-3">
+          <div className="text-sm flex space-x-3 mt-4">
             <span
               className="hover:text-yellow-700 cursor-pointer"
-              onClick={(e) => history.push("/")}
+              onClick={(e) => history.push("/productInCatogory")}
             >
-              Shop
+              Shop 
             </span>
             <span className="text-yellow-700 cursor-default">{category}</span>
           </div>
@@ -59,7 +59,7 @@ const AllProduct = ({ products }) => {
                 <div className="relative col-span-1 m-2">
                   <img
                     onClick={(e) => history.push(`/products/${item._id}`)}
-                    className="w-full object-cover object-center cursor-pointer w-20 h-50"
+                    className="w-full object-cover object-center cursor-pointer fix-image-product"
                     src={`${apiURL}/uploads/products/${item.pImages[0]}`}
                     alt=""
                   />

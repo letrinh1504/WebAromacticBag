@@ -11,9 +11,10 @@ export const HomeContext = createContext();
 const HomeComponent = () => {
   return (
     <Fragment>
+      <div className="">
       <Slider />
       {/* Category, Search & Filter Section */}
-      <section className="md:mx-8 md:my-6 bg-gray-100 border-2 pt-3 pl-2 pr-2 pb-3">
+      <section className="md:mx-8 md:my-6  pt-3 pl-2 pr-2 pb-3">
         <ProductCategory />
       </section>
       {/* Product Section */}
@@ -23,6 +24,8 @@ const HomeComponent = () => {
       {/* <section className="m-4 md:mx-8 md:my-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <FollowONIG />
       </section> */}
+      </div>
+ 
     </Fragment>
   );
 };

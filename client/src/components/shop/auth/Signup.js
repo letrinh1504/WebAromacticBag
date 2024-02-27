@@ -60,12 +60,12 @@ const Signup = (props) => {
 
   return (
     <Fragment>
-      <div className="text-center text-2xl mb-6">Register</div>
+      <div className="text-center text-2xl mb-6 font-weight-bold">Register</div>
       <form className="space-y-4">
         {data.success ? alert(data.success, "green") : ""}
         <div className="flex flex-col">
           <label htmlFor="name">
-            Name<span className="text-sm text-gray-600 ml-1">*</span>
+            Name<span className="text-sm text-gray-600 ml-1 text-danger">*</span>
           </label>
           <input
             onChange={(e) =>
@@ -87,7 +87,7 @@ const Signup = (props) => {
         </div>
         <div className="flex flex-col">
           <label htmlFor="email">
-            Email address<span className="text-sm text-gray-600 ml-1">*</span>
+            Email address<span className="text-sm text-gray-600 ml-1 text-danger">*</span>
           </label>
           <input
             onChange={(e) =>
@@ -107,9 +107,10 @@ const Signup = (props) => {
           />
           {!data.error ? "" : alert(data.error.email, "red")}
         </div>
-        <div className="flex flex-col">
+        <div className="grid grid-cols-2">
+        <div className="flex flex-col pr-1 ">
           <label htmlFor="password">
-            Password<span className="text-sm text-gray-600 ml-1">*</span>
+            Password<span className="text-sm text-gray-600 ml-1 text-danger">*</span>
           </label>
           <input
             onChange={(e) =>
@@ -129,10 +130,10 @@ const Signup = (props) => {
           />
           {!data.error ? "" : alert(data.error.password, "red")}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col pl-1">
           <label htmlFor="cPassword">
             Confirm password
-            <span className="text-sm text-gray-600 ml-1">*</span>
+            <span className="text-sm text-gray-600 ml-1 text-danger">*</span>
           </label>
           <input
             onChange={(e) =>
@@ -152,6 +153,8 @@ const Signup = (props) => {
           />
           {!data.error ? "" : alert(data.error.cPassword, "red")}
         </div>
+        </div>
+
         <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center">
           <div>
             <input
@@ -160,7 +163,8 @@ const Signup = (props) => {
               className="px-4 py-2 focus:outline-none border mr-1"
             />
             <label htmlFor="rememberMe">
-              Remember me<span className="text-sm text-gray-600">*</span>
+              Remember me
+              {/* <span className="text-sm text-gray-600 text-danger">*</span> */}
             </label>
           </div>
           <a className="block text-gray-600" href="/">

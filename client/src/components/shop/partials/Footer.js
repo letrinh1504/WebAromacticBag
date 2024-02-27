@@ -25,7 +25,7 @@ const Footer = (props) => {
                 <div className="col-md-3 mb-md-0 mb-3">
                     <h5 className="text-uppercase">FOLLOW US</h5>
                     <ul className="list-unstyled ">
-                        <li><a href="#!" className="text-light"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#!" className="text-light"><span class="bi bi-facebook blue-color"> </span> Facebook</a></li>
                         <li><a href="#!" className="text-light"><i class="bi bi-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>

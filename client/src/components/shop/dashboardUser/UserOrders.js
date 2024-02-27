@@ -37,7 +37,7 @@ const TableBody = ({ order }) => {
                   src={`${apiURL}/uploads/products/${product.id.pImages[0]}`}
                   alt="productImage"
                 />
-                <span>{product.id.pName}</span>
+                <span>{product.id.pName.slice}</span>
                 <span>{product.quantitiy}x</span>
               </span>
             );

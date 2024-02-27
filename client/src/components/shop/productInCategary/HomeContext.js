@@ -1,5 +1,5 @@
 export const homeState = {
-  categoryListDropdown: true,
+  categoryListDropdown: false,
   filterListDropdown: false,
   searchDropdown: false,
   products: null,
